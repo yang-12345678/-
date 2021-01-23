@@ -1,0 +1,26 @@
+聚焦爬虫：爬取页面中指定的内容
+    - 编码流程
+        - 指定 url
+        - 发起请求
+        - 获取响应数据
+        - 数据解析
+        - 持久化储存
+
+数据解析分类：
+    - 正则
+    - bs4
+    - xpath (***)
+
+数据解析原理概述：
+    - 解析的局部的文本内容都会在标签之间或者标签对应的属性中进行存储
+    - 进行指定标签的定位
+    - 标签或者标签对应的属性中存储的数据值进行提取
+
+ <div class="thumb">
+
+<a href="/article/124006644" target="_blank">
+<img src="//pic.qiushibaike.com/system/pictures/12400/124006644/medium/05390SOTI1H6WRGJ.jpg" alt="糗事#124006644" class="illustration" width="100%" height="auto">
+</a>
+</div>
+
+ex = "<div class="thumb">.*?<img src="(.*?)" alt.*?</div>"
