@@ -24,3 +24,14 @@
 </div>
 
 ex = "<div class="thumb">.*?<img src="(.*?)" alt.*?</div>"
+
+bs4进行数据解析
+    - 数据解析的原理：
+        - 1.标签定位
+        - 2.提取标签、标签属性当中存储的数据值
+    - bs4数据解析的原理
+        - 1.实例化一个BeautifulSoup对象，并且将页面源码数据加载到该对象中
+        - 2.通过调用BeautifulSoup对象中相关的属性或者方法进行标签定位和数据提取
+    - 环境安装：
+        - pip install bs4
+        - pip install lxml
